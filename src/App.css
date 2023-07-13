@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bem-vindo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75vh;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* Adicionado para centralizar verticalmente */
+}
+
+.app-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.links-left {
+    display: flex;
+    gap: 20px;
+}
+
+.links-left a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.links-left a:hover {
+    background-color: #ccc;
+}
+
+.link-inicio {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.link-inicio:hover {
+    background-color: #ccc;
+}
+
+.routes-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 10px;
+    }
+    .app-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .links-left {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .link-inicio,
+    .links-left a {
+        width: 100%;
+    }
+    .routes-container {
+        margin-top: 10px;
+    }
+    .bem-vindo {
+        height: auto;
+        font-size: 20px;
+    }
+}
